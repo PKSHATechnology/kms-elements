@@ -57,18 +57,18 @@ target_link_libraries(test_rtpendpoint
                       ${gstreamer-check-1.0_LIBRARIES}
                       ${KmsGstCommons_LIBRARIES})
 
-add_test_program(test_rtpendpoint_audio rtpendpoint_audio.c)
-add_dependencies(test_rtpendpoint_audio ${LIBRARY_NAME})
-target_include_directories(test_rtpendpoint_audio PRIVATE
-                           ${CMAKE_CURRENT_SOURCE_DIR}/..
-                           ${KmsGstCommons_INCLUDE_DIRS}
-                           ${gstreamer-1.0_INCLUDE_DIRS}
-                           ${gstreamer-check-1.0_INCLUDE_DIRS})
-target_link_libraries(test_rtpendpoint_audio
-                      ${gstreamer-1.0_LIBRARIES}
-                      ${gstreamer-sdp-1.0_LIBRARIES}
-                      ${gstreamer-check-1.0_LIBRARIES}
-                      ${KmsGstCommons_LIBRARIES})
+# add_test_program(test_rtpendpoint_audio rtpendpoint_audio.c)
+# add_dependencies(test_rtpendpoint_audio ${LIBRARY_NAME})
+# target_include_directories(test_rtpendpoint_audio PRIVATE
+#                            ${CMAKE_CURRENT_SOURCE_DIR}/..
+#                            ${KmsGstCommons_INCLUDE_DIRS}
+#                            ${gstreamer-1.0_INCLUDE_DIRS}
+#                            ${gstreamer-check-1.0_INCLUDE_DIRS})
+# target_link_libraries(test_rtpendpoint_audio
+#                       ${gstreamer-1.0_LIBRARIES}
+#                       ${gstreamer-sdp-1.0_LIBRARIES}
+#                       ${gstreamer-check-1.0_LIBRARIES}
+#                       ${KmsGstCommons_LIBRARIES})
 
 # add_test_program(test_rtpendpoint_video rtpendpoint_video.c)
 # add_dependencies(test_rtpendpoint_video kmstestutils ${LIBRARY_NAME})
